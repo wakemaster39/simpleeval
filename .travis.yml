@@ -20,4 +20,6 @@ script:
  - nosetests
  - coverage run -m nose
 after_success:
- - coveralls
+ - coveralls -v
+notifications:
+ webhooks: https://coveralls.io/webhook
